@@ -116,13 +116,19 @@
   }
 
   .gradient-border::before {
-    content: '';
+    content: "";
     position: absolute;
     inset: 0;
     padding: 1px;
-    background: linear-gradient(145deg, rgba(59, 130, 246, 0.5), rgba(99, 102, 241, 0.5));
+    background: linear-gradient(
+      145deg,
+      rgba(59, 130, 246, 0.5),
+      rgba(99, 102, 241, 0.5)
+    );
     border-radius: inherit;
-    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
     mask-composite: exclude;
     -webkit-mask-composite: xor;
   }
